@@ -134,6 +134,12 @@ app_license = "mit"
 # ---------------
 
 # scheduler_events = {
+#     "hourly": [
+#         "estate_app.tasks.sync_products_from_printrove"
+#     ]
+# }
+
+# scheduler_events = {
 #	"all": [
 #		"estate_app.tasks.all"
 #	],

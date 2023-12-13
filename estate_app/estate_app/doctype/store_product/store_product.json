@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-12-12 10:10:42.254113",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "retail_price",
+  "column_break_mmef",
+  "is_published",
+  "estate_product_data_section",
+  "column_break_yazw",
+  "front_mockup_image",
+  "front_mockup",
+  "column_break_fzme",
+  "back_mockup_image",
+  "back_mockup",
+  "estate_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "label": "Retail Price"
+  },
+  {
+   "fieldname": "column_break_mmef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "estate_product_data_section",
+   "fieldtype": "Section Break",
+   "label": "Estate Product Data"
+  },
+  {
+   "fieldname": "back_mockup",
+   "fieldtype": "Attach Image",
+   "label": "Back Mockup ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "back_mockup_image",
+   "fieldtype": "Image",
+   "label": "Back Mockup Image",
+   "options": "back_mockup"
+  },
+  {
+   "fieldname": "estate_id",
+   "fieldtype": "Data",
+   "label": "Estate ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_yazw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "front_mockup",
+   "fieldtype": "Attach Image",
+   "label": "Front Mockup",
+   "read_only": 1
+  },
+  {
+   "fieldname": "front_mockup_image",
+   "fieldtype": "Image",
+   "label": "Front Mockup Image",
+   "options": "front_mockup"
+  },
+  {
+   "fieldname": "column_break_fzme",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-13 17:10:06.000267",
+ "modified_by": "Administrator",
+ "module": "Estate App",
+ "name": "Store Product",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

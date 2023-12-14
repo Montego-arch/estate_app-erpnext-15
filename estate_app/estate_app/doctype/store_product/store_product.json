@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2023-12-12 10:10:42.254113",
@@ -9,6 +10,7 @@
   "retail_price",
   "column_break_mmef",
   "is_published",
+  "route",
   "estate_product_data_section",
   "column_break_yazw",
   "front_mockup_image",
@@ -77,11 +79,18 @@
   {
    "fieldname": "column_break_fzme",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2023-12-13 17:10:06.000267",
+ "modified": "2023-12-14 14:16:23.959454",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Store Product",
@@ -101,10 +110,9 @@
    "write": 1
   }
  ],
+ "route": "products",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }

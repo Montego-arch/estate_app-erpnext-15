@@ -6,9 +6,13 @@
  "engine": "InnoDB",
  "field_order": [
   "tab_2_tab",
+  "section_break_jdmp",
   "email",
   "column_break_mulk",
-  "password"
+  "password",
+  "storefront_section",
+  "use_custom_product_view_template",
+  "custom_product_view_template"
  ],
  "fields": [
   {
@@ -29,12 +33,34 @@
    "fieldname": "password",
    "fieldtype": "Password",
    "label": "Password"
+  },
+  {
+   "depends_on": "eval:doc.use_custom_product_view_template == true",
+   "fieldname": "custom_product_view_template",
+   "fieldtype": "HTML Editor",
+   "label": "Custom Product View Template"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_custom_product_view_template",
+   "fieldtype": "Check",
+   "label": "Use Custom Product View Template?"
+  },
+  {
+   "fieldname": "section_break_jdmp",
+   "fieldtype": "Section Break",
+   "label": "Estate Account"
+  },
+  {
+   "fieldname": "storefront_section",
+   "fieldtype": "Section Break",
+   "label": "Storefront"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-12-12 17:15:16.910385",
+ "modified": "2023-12-14 15:32:48.296123",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Estate Settings",

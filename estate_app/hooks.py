@@ -135,9 +135,11 @@ app_license = "mit"
 
 # scheduler_events = {
 #     # every five minutes
-#     "*/5 * * * *": [
-#         "estate_app.tasks.sync_products_from_printrove"
-#     ]
+#     "Cron": {
+#         "*/5 * * * *": [
+#             "estate_app.tasks.sync_products_from_printrove"
+#         ]
+#     }
 # }
 
 # scheduler_events = {

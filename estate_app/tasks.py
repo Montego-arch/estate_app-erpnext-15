@@ -53,11 +53,11 @@ def get_printrove_access_token():
             "password": estate_settings.get_password("password"),
             },
         )
-    return response["access_token"]
+    access_token = response["access_token"]
 
     frappe.cache.set_value("printrove_access_token", access_token, expires_in_sec=SECONDS_IN_YEAR)
     
-    return response['access_token']
+    return access_token
     
 
 

@@ -15,10 +15,12 @@
   "column_break_yazw",
   "front_mockup_image",
   "front_mockup",
+  "estate_id",
   "column_break_fzme",
   "back_mockup_image",
   "back_mockup",
-  "estate_id"
+  "printrove_category",
+  "printrove_category_id"
  ],
  "fields": [
   {
@@ -84,13 +86,25 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "printrove_category",
+   "fieldtype": "Data",
+   "label": "Printrove Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "printrove_category_id",
+   "fieldtype": "Int",
+   "label": "Printrove Category ID",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-12-14 14:16:23.959454",
+ "modified": "2023-12-19 12:30:19.073299",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Store Product",

@@ -16,6 +16,7 @@
   {
    "fieldname": "sku",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "SKU"
   },
   {
@@ -49,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-12-20 11:09:32.500083",
+ "modified": "2023-12-20 12:34:36.205543",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Store Product Variant",

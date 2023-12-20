@@ -7,19 +7,23 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "front_mockup_image",
+  "column_break_fwgu",
+  "back_mockup_image",
+  "section_break_grmi",
   "retail_price",
   "column_break_mmef",
   "is_published",
   "route",
+  "section_break_oakh",
+  "variants",
   "product_description_section",
   "description",
   "estate_product_data_section",
   "column_break_yazw",
-  "front_mockup_image",
   "front_mockup",
   "estate_id",
   "column_break_fzme",
-  "back_mockup_image",
   "back_mockup",
   "printrove_category",
   "printrove_category_id"
@@ -28,6 +32,7 @@
   {
    "fieldname": "retail_price",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Retail Price"
   },
   {
@@ -92,6 +97,7 @@
   {
    "fieldname": "printrove_category",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Printrove Category",
    "read_only": 1
   },
@@ -110,13 +116,32 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description"
+  },
+  {
+   "fieldname": "column_break_fwgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_grmi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_oakh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "variants",
+   "fieldtype": "Table",
+   "label": "Variants",
+   "options": "Store Product Variant",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-12-19 15:19:08.585557",
+ "modified": "2023-12-20 11:13:28.346586",
  "modified_by": "Administrator",
  "module": "Estate App",
  "name": "Store Product",

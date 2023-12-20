@@ -1,1 +1,7 @@
-<h2>Check Out with: {{ frappe.form_dict.get("product")}}</h2>
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+    <h2>Check Out with: {{ frappe.form_dict.get("product")}}</h2>
+
+{% endblock %}

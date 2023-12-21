@@ -1,7 +1,75 @@
 {% extends "templates/web.html" %}
 
+{% block script %}
+
+<script>
+    const checkout_form = document.getElementById("checkout-form");
+
+    checkout_form.addEventListener("submit", (e) => {
+        // Create a "store order" in the backend
+        // Use the details to trigger payment here
+        //  Process payment events and notify backend
+        
+    })
+</script>
+
+{% endblock %}
+
 {% block page_content %}
 
     <h2>Check Out with: {{ frappe.form_dict.get("product")}}</h2>
+
+    <form class="mt-5" id="checkout-form">
+        <div class="mb-3">
+            <label for="customer_name" class="form-label">Full Name</label>
+            <input required name="customer_name" type="text" class="form-control" id="customer_name">
+        </div>
+
+        <div class="form-group" onsubmit="handle_checkout_submit" >
+            <label for="phone_number" class="form-label">Phone Number</label>
+            <input required phone="phone_number" type="text" class="form-control" id="phone_number">
+        </div>
+          
+        <div class="form-group">
+            <label for="address_line_1" class="form-label">Address Line 1</label>
+            <input required name="address_line_1" type="text" class="form-control" id="address_line_1">
+        </div>
+          
+        <div class="form-group">
+            <label for="address_line_2" class="form-label">Address Line 2</label>
+            <input required name="address_line_2" type="text" class="form-control" id="address_line_2">
+        </div>
+          
+        <div class="form-group">
+            <label for="address_line_2" class="form-label">Address Line 3</label>
+            <input name="address_line_3" type="text" class="form-control" id="address_line_3">
+        </div>
+          
+        <div class="form-group">
+            <label for="country" class="form-label">Country</label>
+            <input required name="country" type="text" class="form-control" id="country">
+        </div>
+
+        <div class="form-group">
+            <label for="state" class="form-label">State</label>
+            <input required name="state" type="text" class="form-control" id="state">
+        </div>
+
+        <div class="form-group">
+            <label for="city" class="form-label">City</label>
+            <input required name="city" type="text" class="form-control" id="city">
+        </div>
+
+        <div class="form-group">
+            <label for="pincode" class="form-label">Pin Code</label>
+            <input required name="pincode" type="text" class="form-control" id="pincode">
+        </div>
+          
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="is_cod">
+            <label class="form-check-label" for="is_cod" name="is_cod">Cash On Delivery</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Place Order & Pay</button>
+    </form>
 
 {% endblock %}

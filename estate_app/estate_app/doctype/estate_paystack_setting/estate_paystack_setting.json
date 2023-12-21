@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-21 10:44:30.837257",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "key_id",
+  "key_secret"
+ ],
+ "fields": [
+  {
+   "fieldname": "key_id",
+   "fieldtype": "Data",
+   "label": "Key ID"
+  },
+  {
+   "fieldname": "key_secret",
+   "fieldtype": "Password",
+   "label": "Key Secret"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-21 10:45:34.375479",
+ "modified_by": "Administrator",
+ "module": "Estate App",
+ "name": "Estate Paystack Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
